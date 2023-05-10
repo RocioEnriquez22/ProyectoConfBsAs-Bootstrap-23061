@@ -49,12 +49,12 @@ nav.bg-color-gris{
 }
 
 .carousel-inner .contenidoCarousel{
-    width: 75%;
+    width: 79%;
     position: absolute;
     margin:0 auto;
     z-index: 30;
     top:30%;
-    left:11%;
+    left:9%;
     right: 10%;
     font-size: 0.5rem;
     align-items:center;
