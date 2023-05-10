@@ -78,7 +78,7 @@ nav.bg-color-gris{
 
 .carousel-item.uno{
     height: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/assets/img/obelisco.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/img/obelisco.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -87,7 +87,7 @@ nav.bg-color-gris{
 
 .carousel-inner .dos{
     height: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/img/pexels-sofia-linares-corsano-13447754.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/img/pexels-sofia-linares-corsano-13447754.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -96,7 +96,7 @@ nav.bg-color-gris{
 
 .carousel-inner .tres{ 
     height: 100%;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/pexels-eric-garcia-11793406.jpg");
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/pexels-eric-garcia-11793406.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -142,7 +142,7 @@ h2 span.letterSm{
 }
 
 .left{
-    background-image: url(../assets/img/pexels-matheus-de-moraes-gugelmim-14401419.jpg);
+    background-image: url("../assets/img/pexels-matheus-de-moraes-gugelmim-14401419.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -200,11 +200,11 @@ footer{
 @media screen and (min-width:768px) {
     
     .carousel-inner .dos{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/img/pexels-camila-raso-8940633.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/img/pexels-camila-raso-8940633.jpg");
     }
 
     .carousel-inner .tres{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/pexels-juan-manuel-ferraro-13401039.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/pexels-juan-manuel-ferraro-13401039.jpg");
     }
 
     .carousel-inner .contenidoCarousel{
@@ -268,14 +268,14 @@ footer{
     }
 
     .carousel-item.uno{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/ba1.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/ba1.jpg");
     }
     .carousel-inner .dos{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/ba2.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/ba2.jpg");
     }
 
     .carousel-inner .tres{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/ba3.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/ba3.jpg");
     }
 
     #lugarYfecha .right{
