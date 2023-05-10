@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+
+/*Estilos del header*/
+header{
+    height: 100vh;
+}
+
+nav.bg-color-gris{
+    background-color: #353A40;
+}
+
+.navbar-nav .nav-item{
+    text-align: center;
+}
+
+.collapse .navbar-nav a.linkVerde{
+    color:green;
+}
+
+/*Carousel*/
+
+.carousel.slide{
+  height: 91%;  
+}
+.carousel-inner{
+    z-index: 6;
+    height: 100%;
+}
+
+.carousel-inner .contenidoCarousel{
+    width: 75%;
+    position: absolute;
+    margin:0 auto;
+    z-index: 30;
+    top:30%;
+    left:11%;
+    right: 10%;
+    font-size: 0.5rem;
+    align-items:center;
+    
+}
+.carousel-control-prev, .carousel-control-next{
+    z-index: 30;
+}
+
+
+.botones a, #lugarYfecha a.botones{
+    font-size: 0.85rem;
+}
+
+.contenidoCarousel .botones a.colorV{
+    background-color:  #23a14b;
+    border-color: #23a14b;
+}
+
+
+
+.carousel-item.uno{
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/assets/img/obelisco.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.carousel-inner .dos{
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/img/pexels-sofia-linares-corsano-13447754.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.carousel-inner .tres{ 
+    height: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/pexels-eric-garcia-11793406.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+
+
+/*Estilo de seccion de Oradores*/
+
+
+h2 span.letterSm{
+    font-size: 0.75rem;
+}
+
+.cardSet{
+    z-index: 5;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.cardSet .card{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.card .card-text{
+    font-size: 0.8rem;
+}
+
+.badge.colorC{
+    background-color: #14A2B6;
+}
+
+
+/*Estilo de la seccion lugarYFecha*/
+#lugarYfecha .row{
+    /*--bs-gutter-x:0rem;*/
+    margin-right: 0rem;
+    
+}
+
+.left{
+    background-image: url(../assets/img/pexels-matheus-de-moraes-gugelmim-14401419.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    height: 20vh;
+}
+
+.right{
+    padding: 1em 1.5em;
+    background-color: #353A40;
+    height: auto;
+}
+
+
+/*Estilos del formulario*/
+
+#convierteteOradorForm form{
+    width: 85%;
+}
+
+#convierteteOradorForm .formOrador legend{
+    font-size: small;
+}
+.formOrador fieldset p{
+    font-size: x-small;
+}
+button.colorBotonEnv{
+    background-color: #96C93E;
+}
+
+
+/*Footer*/
+footer{
+    height: auto;
+    background: rgb(28,56,70);
+    background: linear-gradient(90deg, rgba(28,56,70,1) 0%, rgba(30,81,110,1) 62%);
+    
+}
+
+.NavegadorFooter ul a{
+    transition: background-color 0.3s;
+    color: white;
+    font-size: small;
+    padding: 0.4em 0.55em;
+    border-radius: 7px 7px 7px 8px;
+    -webkit-border-radius: 7px 7px 7px 8px;
+    -moz-border-radius: 7px 7px 7px 8px;
+}
+
+.NavegadorFooter ul a:hover{
+    background-color:  rgb(40, 109, 148);
+}
+
+
+@media screen and (min-width:768px) {
+    
+    .carousel-inner .dos{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/img/pexels-camila-raso-8940633.jpg");
+    }
+
+    .carousel-inner .tres{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/pexels-juan-manuel-ferraro-13401039.jpg");
+    }
+
+    .carousel-inner .contenidoCarousel{
+        width: 68%;
+        left: 14%;
+        font-size: 0.5rem; 
+    }
+
+    header .botones a{
+        font-size: 0.95rem;
+    }
+
+    .cardSet .card{
+        width: 100%;
+    }
+
+    .left{
+        height: auto;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .navbar{
+        justify-content: space-between;
+    }
+    .navbar .container{
+        width: 100%;
+    }
+    .carousel-inner .contenidoCarousel{
+        width: 50%;
+        top:30%;
+        left:35%;
+        right: initial;
+        align-items:flex-end;
+        text-align: right;
+        
+    }
+
+    .collapse.navbar-collapse{
+        width: 90%;
+    }
+
+    .nav-item a{
+        font-size: 0.88rem;
+    }
+
+    header .botones a{
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (min-width:1200px){
+    
+    .nav-item a{
+        font-size: 0.90rem;
+    }
+    .carousel-inner .contenidoCarousel{
+        width: 45%;
+        left: 40%;
+    }
+
+    .carousel-item.uno{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/ba1.jpg");
+    }
+    .carousel-inner .dos{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/ba2.jpg");
+    }
+
+    .carousel-inner .tres{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/ba3.jpg");
+    }
+
+    #lugarYfecha .right{
+        height: 60vh;
+    }
+}
