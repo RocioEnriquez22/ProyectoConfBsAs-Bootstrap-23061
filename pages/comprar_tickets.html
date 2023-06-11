@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS local file-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <!--Nuestro link de css siempre ira por devajo de Css Bootstap
+    Esto se debe por el efecto casacada que tiene CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Conf. Bs As</title>
+</head>
+
+<body class="container-fluid ">
+    <header class="container-fluid h-auto headerTicketsPage">
+        <nav class="navbar navbar-expand-lg navbar-dark  bg-color-gris py-md-3 h-auto ">
+            <div class="container-fluid contenidoNav px-5 mx-md-5 pe-lg-0 ps-lg-2 ps-xl-5">
+                <a class="navbar-brand ms-lg-4" href="../index.html">
+                    <img src="../assets/img/codoacodo.png" alt="Logo CodoaCodo" width="65" class="d-inline-block align-text-top">
+                    Conf Bs As
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-md-end me-lg-4 me-xl-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 me-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-nowrap" aria-current="page" href="#laConferencia">La conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-nowrap" href="#losOradores">Los oradores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-nowrap" href="#lugarYfecha">El lugar y la fecha</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-nowrap" href="#convierteteOradorForm">Conviértete en orador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-nowrap" href="#lugarYfecha">El lugar y la fecha</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-nowrap linkVerde" href="./pages/comprar_tickets.html" target="_blank">Comprar tickets</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header> 
+
+    <main class="container-fluid h-auto">
+        <section id="propuestasCompra" class="container-lg pt-3 ">
+            <div class="row row-cols-1 row-cols-md-3 gx-1 mx-sm-3 mx-md-0 justify-content-center cardsCompraSet">
+                <div class="col w-auto mb-1 mb-lg-0">
+                    <div class="card border-primary border-2 ms-1 cardCompra">
+                        <div class="card-body ">
+                            <h5 class="card-title">Estudiante</h5>
+                            <p class="card-text">Tiene un descuento </p>
+                            <p class="card-text fw-bold fs-6">80%</p>
+                            <p class="card-text text-black-50">* presentar documentación </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col w-auto mb-1 mb-lg-0">
+                    <div class="card border-success border-2 mx-1 cardCompra">
+                        <div class="card-body">
+                            <h5 class="card-title">Trainee</h5>
+                            <p class="card-text">Tiene un descuento </p>
+                            <p class="card-text fw-bold fs-6">50%</p>
+                            <p class="card-text text-black-50">* presentar documentación </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col w-auto mb-1 mb-lg-0">
+                    <div class="card border-warning border-2 me-1 cardCompra">
+                        <div class="card-body">
+                            <h5 class="card-title">Junior</h5>
+                            <p class="card-text">Tiene un descuento </p>
+                            <p class="card-text fw-bold fs-6">15%</p>
+                            <p class="card-text text-black-50">* presentar documentación </p>
+                        </div>                      
+                    </div>
+                </div>
+            </div>
+                
+        </section>
+        <div class="row w-100 m-0">
+            <div class="col-12 px-0">
+                <h2 class="text-center"><span class="letterSm">VENTA</span> <br>VALOR DE TICKETS $200</h2>
+            </div>
+        </div>
+        <div class="container-fluid d-flex justify-content-center ">
+            <form class="d-flex justify-content-center w-75 pb-5 px-md-3 px-lg-5 px-sm-2 " action="" id="formCompra">
+                <div class="row justify-content-center w-100">
+                    <div class="col-md-6 col-12 mb-2 ps-0 pe-0 pe-md-1">
+                        <input class="form-control" type="text" id="fCompNombre" name="fCompNombre" placeholder="Nombre" aria-label="default input example">
+                        <div class="invalid-feedback" id="msgErrorNombre">
+                            <p class="mb-0">Ingrese su nombre</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-12 mb-2 mb-md-3 ps-0 pe-0 ps-md-1">
+                        <input class="form-control" type="text" id="fCompApellido" name="fCompApellido" placeholder="Apellido" aria-label="default input example">
+                        <div class="invalid-feedback" id="msgErrorApellido">
+                            <p class="mb-0">Ingrese su apellido</p>
+                        </div>
+                    </div>
+                    <div class="col-12 bg-light px-0 mb-3 ">
+                        <input type="email" class="form-control" id="emailCompra" name="emailCompra" placeholder="Correo ..@example.com">
+                        <div class="invalid-feedback" id="msgErrorEmail">
+                            <p class="mb-0">Ingrese su Email</p>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-1 ps-0 pe-0 pe-1">
+                        <label for="cantidadTickets">Cantidad</label>
+                        <input class="form-control mt-1" type="number" min="1" id="cantidadTickets" name="cantidadTickets" placeholder="Cantidad de Tickets" >
+                        <div class="invalid-feedback" id="msgErrorCantidadTickets">
+                            <p class="mb-0">Ingrese cantidad de Tickets</p>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-1 mb-md-3 ps-0 pe-0 ps-1">
+                        <label for="categoriaSelector">Categoria</label>
+                        <select class="form-select mt-1" name="categoriaSelector" id="categoriaSelector">
+                            <option value="" selected>-- Seleccione --</option>
+                            <option value="0">Sin Categoria</option>
+                            <option value="1">Estudiante</option>
+                            <option value="2">Trainee</option>
+                            <option value="3">Junior</option>
+                        </select>
+                        <div class="invalid-feedback" id="msgErrorCategoria">
+                            <p class="mb-0">Ingrese categoria</p>
+                        </div>
+                    </div>
+                    <div class="col-12 bg-light px-0 mb-3 bg-transparent">
+                        <output class="alert alert-primary form-control py-2 my-2 text-primary " role="alert" name="results" >Total a pagar: $ <span class="text-primary align-middle" id="resultsCalc"></span></output>
+                    </div>
+
+                    <div class="col-6 px-0 mb-3 pe-1 ">
+                        <button class="btn btn-lg text-white colorBotonEnv w-100" type="reset" form="formCompra" name="botonBorrar" id="botonBorrar" >Borrar</button>
+                    </div>
+                    <div class="col-6 px-0 mb-3 ps-1">
+                        <button class="btn btn-lg text-white colorBotonEnv w-100" type="button" form="formCompra" name="botonResumen" id="botonResumen" >Resumen</button>
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+
+    </main>
+    
+    <footer class="container-fluid py-4 py-lg-2 mt-3 ">
+        <div class="row m-3 NavegadorFooter px-sm-4 px-md-5 px-lg-5">
+            <ul class="nav justify-content-center px-4 justify-content-evenly gap-2 ">
+                <li class="nav-item ">
+                  <a class="nav-link active text-wrap text-white" aria-current="page" href="#">Preguntas <br> frecuentes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Contáctanos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Prensa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Conferencias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Términos y <br>condiciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Privacidad</a>
+                </li><li class="nav-item">
+                    <a class="nav-link text-white" href="#">Estudiantes</a>
+                </li>
+              </ul>
+        </div>
+    </footer> 
+    <!-- Option 1: Bootstrap Bundle with Popper(Siempre ira cerca del body por ser JS) local file-->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/compraTickets.js"></script>
+</body>
+
+</html>
+
+
+    

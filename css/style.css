@@ -282,3 +282,25 @@ footer{
         height: 60vh;
     }
 }
+
+/*Estilos de la pag compra_tickets*/
+
+#propuestasCompra .row .cardCompra{
+    border-radius: 1%;
+    width: 16em;
+    height: 12em;
+}
+
+#propuestasCompra .row .cardCompra .card-body{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+form#formCompra output.resultBox{
+    background-color:#CCE5FF ;
+    border: #6a9ace;
+
+}
